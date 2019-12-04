@@ -1,0 +1,10 @@
+.col-sm {
+    margin-top: 40px;
+}
+.btn-user, .btn-department {
+    width: 350px;
+    margin: 5px;
+}
+.btn-user span {
+    font-weight: 600;
+}
