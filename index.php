@@ -133,7 +133,6 @@
                     'UF_DEPARTMENT': arrDepartment
                 },
                 function (result) {
-                    console.log(result.data());
 
                     $.each(result.data(), function (index, value) {
                         arrUser.push(value.ID);  //заполняем сотрудниками
@@ -157,7 +156,7 @@
                         };
 
                     batch.getList("crm.lead.list", param, function (data) {
-                    console.log(data);
+
                         var nowDate = new Date();
 
                         $.each(data, function (batchIndex, batchValue) {
@@ -165,7 +164,6 @@
                                 filteredLeads.push(responseValue);
                             })
                         });
-                        console.log(filteredLeads, result.data());
 
                         var today = new Date();
                         var yesterday = new Date(today.valueOf() - 24*60*60*1000);
